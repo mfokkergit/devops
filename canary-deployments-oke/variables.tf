@@ -164,8 +164,8 @@ locals {
   ocir_namespace = lookup(data.oci_objectstorage_namespace.ns, "namespace")
 }
 
-#variable "ocir_region" {
-# default = "iad"}
+variable "ocir_region" {
+ default = "AMS"}
 
 variable "deploy_artifact_deploy_artifact_source_deploy_artifact_source_type" {
   default = "OCIR"
